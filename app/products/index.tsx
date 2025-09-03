@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 
 const ProductsScreen = () => {
   return (
-    <View>
+    <View className="mt-5">
       <Text>ProductsScreen</Text>
     </View>
   );

@@ -7,10 +7,29 @@ const HomeScreen = () => {
   return (
     <View className="mt-5">
       <Link href={"./products"} asChild>
-        <CustomButton onPress={() => router.push("./products")} color="primary">
+        <CustomButton
+          className="mb-10"
+          onPress={() => router.push("./products")}
+          color="primary"
+        >
           Productos
         </CustomButton>
       </Link>
+      <CustomButton
+        className="mb-10"
+        onPress={() => router.push("./products")}
+        color="primary"
+      >
+        Productos
+      </CustomButton>
+      <CustomButton
+        className="mb-10"
+        variant="text-only"
+        onPress={() => router.push("./products")}
+        color="primary"
+      >
+        Productos
+      </CustomButton>
 
       {/* <Text>HomeScreen</Text> */}
       {/* <Link className="mb-5" href="/products">
