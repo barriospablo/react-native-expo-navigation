@@ -6,30 +6,36 @@ import { View } from "react-native";
 const HomeScreen = () => {
   return (
     <View className="mt-5">
+      <CustomButton
+        className="mb-10"
+        onPress={() => router.push("./products")}
+        color="primary"
+      >
+        Productos
+      </CustomButton>
+      <CustomButton
+        className="mb-10"
+        onPress={() => router.push("./profile")}
+        color="secondary"
+      >
+        Profile
+      </CustomButton>
+      <CustomButton
+        className="mb-10"
+        onPress={() => router.push("./settings")}
+        color="secondary"
+      >
+        Ajustes
+      </CustomButton>
       <Link href={"./products"} asChild>
         <CustomButton
           className="mb-10"
           onPress={() => router.push("./products")}
-          color="primary"
+          color="tertiary"
         >
           Productos
         </CustomButton>
       </Link>
-      <CustomButton
-        className="mb-10"
-        onPress={() => router.push("./products")}
-        color="primary"
-      >
-        Productos
-      </CustomButton>
-      <CustomButton
-        className="mb-10"
-        variant="text-only"
-        onPress={() => router.push("./products")}
-        color="primary"
-      >
-        Productos
-      </CustomButton>
 
       {/* <Text>HomeScreen</Text> */}
       {/* <Link className="mb-5" href="/products">
